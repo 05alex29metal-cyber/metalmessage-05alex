@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #07100f;
+  color: #f3f3f3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #075e54;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,.35);
+}
+
+.back {
+  font-size: 24px;
+  opacity: .9;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #111;
+  border: 2px solid #ddd;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.status {
+  font-size: 12px;
+  opacity: .85;
+}
+
+.chat {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 18px 12px 28px;
+}
+
+.day {
+  width: fit-content;
+  margin: 4px auto 18px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  color: #ccc;
+  font-size: 13px;
+}
+
+.song-card,
+.score,
+.listen {
+  background: #1f2c34;
+  border-radius: 16px;
+  padding: 14px;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.28);
+  max-width: 92%;
+}
+
+.song-card .label {
+  color: #1db954;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.song-card h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.song-card h2 {
+  font-size: 16px;
+  font-weight: normal;
+  color: #ccc;
+  margin: 4px 0 12px;
+}
+
+.bubble {
+  border-radius: 16px;
+  padding: 14px;
+  margin-bottom: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,.28);
+}
+
+.me {
+  background: #25d366;
+  color: #06120e;
+  margin-left: auto;
+  max-width: 88%;
+}
+
+.bubble p {
+  margin: 0 0 12px;
+  line-height: 1.45;
+}
+
+.bubble p:last-child {
+  margin-bottom: 0;
+}
+
+.time {
+  font-size: 11px;
+  opacity: .65;
+  text-align: right;
+  margin-top: 8px;
+}
+
+.score h3,
+.listen h3 {
+  margin: 0 0 12px;
+}
+
+.score div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  padding: 8px 0;
+}
+
+.score .total {
+  margin-top: 8px;
+  border-bottom: none;
+  color: #25d366;
+  font-size: 18px;
+}
+
+.listen p {
+  margin: 8px 0;
+}
+
+footer {
+  text-align: center;
+  color: #8a8a8a;
+  font-size: 12px;
+  padding: 24px 12px 32px;
+}
+
+@media (min-width: 800px) {
+  body {
+    background:
+      radial-gradient(circle at top, rgba(37,211,102,.08), transparent 35%),
+      #07100f;
+  }
+
+  .chat {
+    padding-top: 28px;
+  }
+}
