@@ -1,3 +1,3 @@
-# MetalMessage 3.0
+# MetalMessage 3.1
 
-Dunkles Smaragdgrün, eigenständiges Design, MetalScore als Marke.
+Mobile Fix: kompakter, lesbarer, bessere Kartenoptik.
