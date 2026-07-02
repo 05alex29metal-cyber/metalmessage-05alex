@@ -1,3 +1,3 @@
-# MetalMessage 3.1
+# MetalMessage 3.2
 
-Mobile Fix: kompakter, lesbarer, bessere Kartenoptik.
+Contact Update: Besucher können Song- und Albumvorschläge per Mail senden.
