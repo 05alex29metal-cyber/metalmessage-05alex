@@ -1,3 +1,3 @@
-# MetalMessage 3.2
+# MetalMessage 4.1 Pro Polish
 
-Contact Update: Besucher können Song- und Albumvorschläge per Mail senden.
+Professioneller Header, bessere Karten, Statistik, überarbeitete Cover-Platzhalter.
