@@ -4,164 +4,320 @@
 
 body {
   margin: 0;
-  background: #07100f;
+  background:
+    radial-gradient(circle at top, rgba(37, 211, 102, 0.10), transparent 34%),
+    linear-gradient(180deg, #07100f 0%, #030504 100%);
   color: #f3f3f3;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.topbar {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: #075e54;
-  color: white;
+.app-header {
+  height: 74px;
+  background: rgba(5, 18, 16, 0.97);
   display: flex;
   align-items: center;
   gap: 12px;
-  padding: 14px;
-  box-shadow: 0 2px 12px rgba(0,0,0,.35);
+  padding: 12px 14px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.55);
+  border-bottom: 1px solid rgba(37, 211, 102, 0.22);
 }
 
-.back {
-  font-size: 24px;
-  opacity: .9;
+.back-button {
+  font-size: 26px;
+  opacity: 0.9;
 }
 
-.avatar {
-  width: 42px;
-  height: 42px;
+.logo-bubble {
+  width: 46px;
+  height: 46px;
   border-radius: 50%;
-  background: #111;
-  border: 2px solid #ddd;
-  color: #fff;
+  background: #0b0f0e;
+  border: 2px solid #25d366;
   display: grid;
   place-items: center;
-  font-weight: bold;
+  font-size: 22px;
+  box-shadow: 0 0 18px rgba(37, 211, 102, 0.28);
 }
 
-.name {
+.profile-info {
+  flex: 1;
+}
+
+.profile-name {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 800;
 }
 
-.status {
+.profile-status {
+  margin-top: 3px;
   font-size: 12px;
-  opacity: .85;
+  color: #25d366;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
-.chat {
+.typing-dot {
+  width: 8px;
+  height: 8px;
+  background: #25d366;
+  border-radius: 50%;
+  box-shadow: 0 0 12px #25d366;
+}
+
+.menu-dot {
+  font-size: 24px;
+  opacity: 0.85;
+}
+
+.chat-area {
   max-width: 760px;
   margin: 0 auto;
-  padding: 18px 12px 28px;
+  padding: 18px 12px 38px;
 }
 
-.day {
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(37,211,102,0.18);
+  border-radius: 18px;
+  padding: 14px;
+  margin-bottom: 18px;
+}
+
+.brand-logo {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  background: #25d366;
+  color: #06120e;
+  display: grid;
+  place-items: center;
+  font-size: 28px;
+  box-shadow: 0 0 24px rgba(37, 211, 102, .25);
+}
+
+.brand-title {
+  font-weight: 900;
+  font-size: 22px;
+  letter-spacing: .2px;
+}
+
+.brand-subtitle {
+  color: #9bd8b1;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.date-chip {
   width: fit-content;
-  margin: 4px auto 18px;
-  padding: 6px 12px;
-  border-radius: 999px;
+  margin: 0 auto 18px;
+  padding: 6px 14px;
   background: rgba(255,255,255,.08);
-  color: #ccc;
+  color: #cfcfcf;
+  border-radius: 999px;
   font-size: 13px;
+}
+
+.message {
+  max-width: 92%;
+  padding: 14px;
+  border-radius: 18px;
+  margin-bottom: 13px;
+  line-height: 1.45;
+  box-shadow: 0 8px 22px rgba(0,0,0,.32);
 }
 
 .song-card,
-.score,
-.listen {
+.score-card,
+.moment-card,
+.listen-card,
+.respect-card {
   background: #1f2c34;
-  border-radius: 16px;
-  padding: 14px;
-  margin-bottom: 14px;
-  box-shadow: 0 4px 14px rgba(0,0,0,.28);
-  max-width: 92%;
+  border: 1px solid rgba(255,255,255,.06);
+  border-top-left-radius: 5px;
 }
 
-.song-card .label {
-  color: #1db954;
+.small-label,
+.section-label {
+  color: #25d366;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: .3px;
+}
+
+.song-content {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.album-cover {
+  width: 82px;
+  height: 82px;
+  border-radius: 12px;
+  background:
+    linear-gradient(135deg, #050505, #1b1b1b);
+  border: 1px solid rgba(255,255,255,.18);
+  display: grid;
+  place-items: center;
+  color: #e5e5e5;
+  font-weight: 900;
+  font-size: 24px;
+  letter-spacing: -2px;
+}
+
+.song-info {
+  flex: 1;
+}
+
+.band {
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.track {
+  color: #e8e8e8;
+  margin-top: 3px;
+}
+
+.year {
+  color: #8f9a98;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.spotify-button {
+  display: inline-block;
+  margin-top: 10px;
+  color: #25d366;
+  text-decoration: none;
+  font-weight: 800;
   font-size: 13px;
-  margin-bottom: 8px;
 }
 
-.song-card h1 {
-  font-size: 22px;
-  margin: 0;
-}
-
-.song-card h2 {
-  font-size: 16px;
-  font-weight: normal;
-  color: #ccc;
-  margin: 4px 0 12px;
-}
-
-.bubble {
-  border-radius: 16px;
-  padding: 14px;
-  margin-bottom: 14px;
-  box-shadow: 0 4px 14px rgba(0,0,0,.28);
-}
-
-.me {
+.alex-message {
+  margin-left: auto;
   background: #25d366;
   color: #06120e;
-  margin-left: auto;
-  max-width: 88%;
+  border-top-right-radius: 5px;
 }
 
-.bubble p {
+.alex-message.long p {
   margin: 0 0 12px;
-  line-height: 1.45;
 }
 
-.bubble p:last-child {
+.alex-message.long p:last-of-type {
   margin-bottom: 0;
 }
 
-.time {
-  font-size: 11px;
-  opacity: .65;
+.message-time {
   text-align: right;
   margin-top: 8px;
+  font-size: 11px;
+  opacity: 0.65;
 }
 
-.score h3,
-.listen h3 {
-  margin: 0 0 12px;
-}
-
-.score div {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(255,255,255,.08);
-  padding: 8px 0;
-}
-
-.score .total {
-  margin-top: 8px;
-  border-bottom: none;
-  color: #25d366;
+.score-card h2,
+.moment-card h2,
+.listen-card h2 {
+  margin: 0 0 14px;
   font-size: 18px;
 }
 
-.listen p {
-  margin: 8px 0;
+.score-row {
+  display: grid;
+  grid-template-columns: 110px 1fr 48px;
+  align-items: center;
+  gap: 10px;
+  margin: 12px 0;
+  font-size: 14px;
+}
+
+.bar {
+  height: 8px;
+  background: rgba(255,255,255,.09);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.bar i {
+  display: block;
+  height: 100%;
+  background: #25d366;
+  border-radius: 999px;
+  box-shadow: 0 0 12px rgba(37,211,102,.55);
+}
+
+.total-score {
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255,255,255,.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #25d366;
+  font-weight: 900;
+}
+
+.total-score strong {
+  font-size: 30px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags span {
+  background: rgba(37,211,102,.12);
+  border: 1px solid rgba(37,211,102,.25);
+  color: #dffff0;
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.respect-card {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  color: #25d366;
+  font-size: 18px;
+  width: fit-content;
+}
+
+.respect-card strong {
+  font-size: 28px;
 }
 
 footer {
   text-align: center;
-  color: #8a8a8a;
+  color: #7f8f8b;
   font-size: 12px;
-  padding: 24px 12px 32px;
+  padding: 22px 12px 34px;
 }
 
-@media (min-width: 800px) {
-  body {
-    background:
-      radial-gradient(circle at top, rgba(37,211,102,.08), transparent 35%),
-      #07100f;
+@media (max-width: 420px) {
+  .song-content {
+    align-items: flex-start;
   }
 
-  .chat {
-    padding-top: 28px;
+  .album-cover {
+    width: 70px;
+    height: 70px;
+  }
+
+  .score-row {
+    grid-template-columns: 96px 1fr 44px;
+    gap: 7px;
   }
 }

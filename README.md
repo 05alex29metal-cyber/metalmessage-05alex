@@ -1,12 +1,12 @@
 # MetalMessage 🤘
 
-Honest Metal Reviews by 05Alex.
+## Build 2 – Song Card
 
-## Version
-
-v0.1 – Under a Funeral Moon
-
-## Mission
-
-MetalMessage ist kein Musikmagazin.  
-MetalMessage ist ein Chat über Metal-Songs – ehrlich, persönlich und direkt.
+Neu:
+- kaputter Spotify-Embed entfernt
+- saubere Song-Karte mit Spotify-Link
+- Logo-Konzept C als grüne Hörner-Bubble
+- MetalScore mit Balken
+- Lieblingsmoment
+- Wann höre ich den Song?
+- Respect-Karte
