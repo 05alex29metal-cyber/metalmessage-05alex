@@ -1,3 +1,3 @@
-# MetalMessage 4.1 Pro Polish
+# MetalMessage 4.2 Patreon Update
 
-Professioneller Header, bessere Karten, Statistik, überarbeitete Cover-Platzhalter.
+Patreon-Support eingebaut: Header, Navigation, Startseite, Footer und Review-Seiten.
