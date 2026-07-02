@@ -1,3 +1,10 @@
-# MetalMessage 🤘
+# MetalMessage 2.0
 
-v1.0 Beta – Honest Metal Reviews by 05Alex.
+Messenger-inspiriert, aber eigenständig.
+
+Enthält:
+- Startseite
+- Review-Karten
+- 5 Reviews
+- Essentials-Liste
+- Dark Design ohne WhatsApp-Kopie
