@@ -1,0 +1,1 @@
+const search=document.getElementById('search');if(search){search.addEventListener('input',()=>{const q=search.value.toLowerCase().trim();document.querySelectorAll('.review-card').forEach(card=>{card.style.display=card.dataset.search.includes(q)?'grid':'none';});});}

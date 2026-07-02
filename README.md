@@ -1,3 +1,3 @@
-# MetalMessage 4.2 Patreon Update
+# MetalMessage 5.0
 
-Patreon-Support eingebaut: Header, Navigation, Startseite, Footer und Review-Seiten.
+Logo-Update, MetalJournal, Stimmungskarten, detaillierte Scores, Suche, Premium-Startseite.
