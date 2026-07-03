@@ -1,13 +1,19 @@
-# MetalMessage XI – Logo Focus
+# MetalMessage XI Final
 
-Neue Version mit Fokus auf Markenlogo:
+Upload-Dateien:
+- index.html
+- style.css
+- data.js
+- app.js
+- logo.svg
+- favicon.svg
+- .nojekyll
+- README.md
+
+Fokus:
 - Konzept 5 / Abstract M in Weiß
-- `logo.svg`
-- `favicon.svg`
-- Logo im Header, Hero, Brand-Section und Footer
-- Ladeanimation mit Logo
-- persönliche Mail bleibt entfernt
-- Instagram + Patreon bleiben eingebaut
-
-Upload:
-index.html, style.css, data.js, app.js, logo.svg, favicon.svg, README.md
+- Logo im Header, Hero, Brand-Bereich und Footer
+- Favicon
+- Ladeanimation
+- Instagram + Patreon
+- persönliche Mail entfernt

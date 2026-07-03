@@ -1,4 +1,4 @@
-const config=window.MM_CONFIG||{};const reviews=window.MM_REVIEWS||[];
+const reviews=window.MM_REVIEWS||[];
 function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
 function art(r,cls='art-card'){return `<div class="${cls}"><span>${esc(r.genre)}</span><div class="symbol">${esc(r.symbol)}</div><b>${esc(r.poster)}</b><small>${esc(r.artist)}</small></div>`}
 function scoreRows(scores){return Object.entries(scores||{}).map(([n,v])=>`<div class="score-row"><span>${esc(n)}</span><div class="bar"><i style="width:${Number(v)*10}%"></i></div><b>${esc(v)}/10</b></div>`).join('')}
@@ -9,6 +9,5 @@ document.querySelectorAll('[data-open]').forEach(el=>el.addEventListener('click'
 document.querySelectorAll('.review-card-x').forEach(el=>el.addEventListener('click',()=>showReview(el.dataset.id)));
 const input=document.getElementById('search');if(input){input.addEventListener('input',()=>{const q=input.value.toLowerCase().trim();document.querySelectorAll('.review-card-x').forEach(c=>c.style.display=c.dataset.search.includes(q)?'block':'none')});}
 document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',()=>{const q=btn.dataset.filter||'';if(input){input.value=q;input.dispatchEvent(new Event('input'));}document.getElementById('reviews')?.scrollIntoView({behavior:'smooth'});}));
-const loader=document.getElementById('loader');window.addEventListener('load',()=>setTimeout(()=>loader?.classList.add('hide'),450));
-const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
-document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+window.addEventListener('load',()=>setTimeout(()=>document.getElementById('loader')?.classList.add('hide'),450));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
