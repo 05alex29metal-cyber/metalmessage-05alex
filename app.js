@@ -121,3 +121,14 @@ if(document.readyState==='loading') document.addEventListener('DOMContentLoaded'
 else init();
 
 })();
+
+// MetalMessage XIV - Album Reviews add-on
+(function(){
+function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));}
+function scoreRows(scores){return Object.entries(scores||{}).map(([n,v])=>`<div class="score-row"><span>${esc(n)}</span><div class="bar"><i style="width:${Number(v)*10}%"></i></div><b>${esc(v)}/10</b></div>`).join('')}
+function albumArt(a){return `<div class="art-card"><span>${esc(a.genre)}</span><div class="symbol">${esc(a.symbol)}</div><b>${esc(a.poster)}</b><small>${esc(a.artist)}</small></div>`}
+function showAlbum(id){const a=(window.MM_ALBUMS||[]).find(x=>x.id===id); if(!a)return; document.querySelector('main')?.classList.add('hidden'); const view=document.getElementById('reviewView'); view.innerHTML=`<span class="back" onclick="showHome()">← Zurück</span><section class="review-page-x">${albumArt(a)}<article class="review-main"><span class="label">Album Review #${esc(a.num)}</span><h1>${esc(a.album)}</h1><h2>${esc(a.artist)} · ${esc(a.genre)} · ${esc(a.year)}</h2><div class="review-block"><span>Bewertung</span><h2>${esc(a.score)}/10</h2></div><div class="review-block"><span>05Alex sagt</span><p>${esc(a.review)}</p></div><div class="review-block"><span>Kritik</span><p>${esc(a.criticism)}</p></div><div class="review-block"><span>Top 3 Songs</span><ol>${(a.highlights||[]).map(x=>`<li>${esc(x)}</li>`).join('')}</ol></div><div class="review-block"><span>Atmosphäre</span><p>${(a.mood||[]).map(esc).join(' · ')}</p></div><div class="review-block score-table"><span>AlbumScore</span>${scoreRows(a.scores)}</div><div class="review-block"><span>Lieblingsmoment</span><p>${esc(a.moment)}</p></div><div class="reaction-panel"><h3>Reagieren</h3><p>Welche Stimmung trifft es?</p><div class="reaction-grid"><button class="reaction-btn">🤘 Legendär</button><button class="reaction-btn">❄️ Eiskalt</button><button class="reaction-btn">☠️ Brutal</button><button class="reaction-btn">🌑 Atmosphäre</button></div></div></article></section>`; view.classList.remove('hidden'); window.scrollTo({top:0,behavior:'smooth'});}
+window.showAlbum=showAlbum;
+function initAlbums(){document.querySelectorAll('[data-album]').forEach(el=>el.addEventListener('click',e=>{e.stopPropagation();showAlbum(el.dataset.album)}));}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',initAlbums);else initAlbums();
+})();

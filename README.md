@@ -20,3 +20,12 @@ Fix:
 - Zufällige Review
 - Instagram + Patreon
 - persönliche Mail entfernt
+
+
+# MetalMessage XIV – Album Reviews
+
+Neu:
+- Album Reviews als eigener Bereich
+- Immortal – Battles in the North als Album Review #001
+- Album-Detailseite mit Bewertung, Kritik, Top 3 Songs, Atmosphäre und Lieblingsmoment
+- weniger Hochglanz, mehr ehrlicher MetalMessage-Ton
