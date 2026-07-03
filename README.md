@@ -17,3 +17,14 @@ Fokus:
 - Ladeanimation
 - Instagram + Patreon
 - persönliche Mail entfernt
+
+
+# MetalMessage XII – Surprise Features
+
+Neu:
+- Zufällige Review
+- Dashboard mit Projektzahlen
+- MetalJournal-Featurebereich
+- Community-Preview
+- stärkere Review-Card-Hinweise
+- Logo/Branding bleibt aus XI erhalten

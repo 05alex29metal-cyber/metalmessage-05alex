@@ -11,3 +11,13 @@ const input=document.getElementById('search');if(input){input.addEventListener('
 document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',()=>{const q=btn.dataset.filter||'';if(input){input.value=q;input.dispatchEvent(new Event('input'));}document.getElementById('reviews')?.scrollIntoView({behavior:'smooth'});}));
 window.addEventListener('load',()=>setTimeout(()=>document.getElementById('loader')?.classList.add('hide'),450));
 const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+
+// MetalMessage XII random review
+const randomButton = document.getElementById('randomReview');
+if(randomButton){
+  randomButton.addEventListener('click', () => {
+    if(!reviews || !reviews.length) return;
+    const review = reviews[Math.floor(Math.random() * reviews.length)];
+    showReview(review.id);
+  });
+}
