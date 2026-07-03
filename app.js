@@ -9,3 +9,6 @@ document.querySelectorAll('[data-open]').forEach(el=>el.addEventListener('click'
 document.querySelectorAll('.review-card-x').forEach(el=>el.addEventListener('click',()=>showReview(el.dataset.id)));
 const input=document.getElementById('search');if(input){input.addEventListener('input',()=>{const q=input.value.toLowerCase().trim();document.querySelectorAll('.review-card-x').forEach(c=>c.style.display=c.dataset.search.includes(q)?'block':'none')});}
 document.querySelectorAll('[data-filter]').forEach(btn=>btn.addEventListener('click',()=>{const q=btn.dataset.filter||'';if(input){input.value=q;input.dispatchEvent(new Event('input'));}document.getElementById('reviews')?.scrollIntoView({behavior:'smooth'});}));
+const loader=document.getElementById('loader');window.addEventListener('load',()=>setTimeout(()=>loader?.classList.add('hide'),450));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));

@@ -1,10 +1,13 @@
-# MetalMessage X.1
+# MetalMessage XI – Logo Focus
 
-Fix-Version:
-- Review des Monats ist direkt in HTML enthalten
-- Empfehlung ist direkt in HTML enthalten
-- Review-Karten sind direkt in HTML enthalten
-- JavaScript wird nur noch für Suche, Filter und Review-Detailansicht genutzt
-- dadurch keine leeren Balken mehr, auch wenn Script kurz verzögert lädt
+Neue Version mit Fokus auf Markenlogo:
+- Konzept 5 / Abstract M in Weiß
+- `logo.svg`
+- `favicon.svg`
+- Logo im Header, Hero, Brand-Section und Footer
+- Ladeanimation mit Logo
+- persönliche Mail bleibt entfernt
+- Instagram + Patreon bleiben eingebaut
 
-Persönliche Mail bleibt entfernt.
+Upload:
+index.html, style.css, data.js, app.js, logo.svg, favicon.svg, README.md

@@ -3,14 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MetalMessage X.1</title>
+  <title>MetalMessage XI</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="loader" class="loader">
+    <img src="logo.svg" alt="MetalMessage Logo">
+    <span>MetalMessage</span>
+  </div>
+
   <div class="site-shell">
     <header class="topbar">
       <a class="logo-wrap" href="#home" aria-label="MetalMessage Home">
-        <div class="logo-orb"><span>☾</span><b>M</b></div>
+        <img class="brand-logo" src="logo.svg" alt="MetalMessage Logo">
         <div class="logo-text">
           <strong>Metal<span>Message</span></strong>
           <small>Für Metalheads. Von einem Metalhead.</small>
@@ -32,7 +38,7 @@
     <main id="home">
       <section class="hero-x">
         <div class="hero-content">
-          <p>MetalMessage X.1</p>
+          <p>MetalMessage XI</p>
           <h1>Ein Song.<br>Eine Meinung.<br><span>Kein Bullshit.</span></h1>
           <p class="lead">Keine Magazin-Sprache. Keine objektiven Wahrheiten. Nur ehrliche Metal-Reviews von 05Alex.</p>
           <div class="hero-buttons">
@@ -41,14 +47,23 @@
           </div>
         </div>
         <div class="hero-emblem" aria-hidden="true">
-          <div class="moon-logo">☾</div>
+          <img src="logo.svg" alt="">
           <strong>MetalMessage</strong>
           <span>Est. 2024</span>
         </div>
       </section>
 
+      <section class="brand-section reveal">
+        <img src="logo.svg" alt="MetalMessage Logo">
+        <div>
+          <span>Neues Markenzeichen</span>
+          <h2>Abstract M in Weiß</h2>
+          <p>Das neue Logo verbindet ein zerstörtes M, Spitzen, Mond-Anmutung und smaragdgrünen Glow. Es ist gebaut für Website, Instagram, Patreon, Sticker und später Merch.</p>
+        </div>
+      </section>
+
       <section class="mag-grid">
-        <article id="featured" class="panel featured-panel">
+        <article id="featured" class="panel featured-panel reveal">
 <div class="art-card"><span>Death Metal</span><div class="symbol">☠</div><b>LEPROSY</b><small>Death</small></div>
 <div class="feature-copy">
   <h3>Review des Monats</h3>
@@ -59,7 +74,7 @@
   <br><a class="review-link" data-open="leprosy">Review lesen →</a>
 </div>
 </article>
-        <article id="recommendation" class="panel recommendation-panel">
+        <article id="recommendation" class="panel recommendation-panel reveal">
 <div class="art-card"><span>Empfehlung</span><div class="symbol">☾</div><b>A Blaze in the Northern Sky</b><small>Darkthrone</small></div>
 <div>
   <h3>05Alex empfiehlt heute</h3>
@@ -69,7 +84,7 @@
   <a class="review-link" href="#reviews">Zum Archiv →</a>
 </div>
 </article>
-        <aside class="panel side-panel">
+        <aside class="panel side-panel reveal">
           <div class="side-block">
             <h3>Suche</h3>
             <div class="search-line">
@@ -100,7 +115,7 @@
           <a href="#reviews">Alle Reviews anzeigen →</a>
         </div>
         <div id="reviewGrid" class="review-strip">
-<article class="review-card-x" data-id="leprosy" data-search="death leprosy death metal">
+<article class="review-card-x reveal" data-id="leprosy" data-search="death leprosy death metal">
   <div class="mini-art"><span>☠</span></div>
   <small>Death Metal</small>
   <h3>Leprosy</h3>
@@ -109,7 +124,7 @@
 </article>
 
 
-<article class="review-card-x" data-id="under-a-funeral-moon" data-search="darkthrone under a funeral moon black metal">
+<article class="review-card-x reveal" data-id="under-a-funeral-moon" data-search="darkthrone under a funeral moon black metal">
   <div class="mini-art"><span>☾</span></div>
   <small>Black Metal</small>
   <h3>Under a Funeral Moon</h3>
@@ -118,7 +133,7 @@
 </article>
 
 
-<article class="review-card-x" data-id="sign-of-evil" data-search="violent force sign of evil thrash metal">
+<article class="review-card-x reveal" data-id="sign-of-evil" data-search="violent force sign of evil thrash metal">
   <div class="mini-art"><span>⚡</span></div>
   <small>Thrash Metal</small>
   <h3>Sign of Evil</h3>
@@ -127,7 +142,7 @@
 </article>
 
 
-<article class="review-card-x" data-id="freezing-moon" data-search="mayhem freezing moon black metal">
+<article class="review-card-x reveal" data-id="freezing-moon" data-search="mayhem freezing moon black metal">
   <div class="mini-art"><span>❄</span></div>
   <small>Black Metal</small>
   <h3>Freezing Moon</h3>
@@ -136,7 +151,7 @@
 </article>
 
 
-<article class="review-card-x" data-id="gravity" data-search="architects gravity metalcore">
+<article class="review-card-x reveal" data-id="gravity" data-search="architects gravity metalcore">
   <div class="mini-art"><span>◆</span></div>
   <small>Metalcore</small>
   <h3>Gravity</h3>
@@ -146,7 +161,7 @@
 </div>
       </section>
 
-      <section id="journal" class="feature-row">
+      <section id="journal" class="feature-row reveal">
         <article><span>▰</span><h3>Ehrliche Reviews</h3><p>Keine Objektivität. Nur meine Meinung. 100% unabhängig.</p></article>
         <article><span>☠</span><h3>MetalJournal</h3><p>Persönliche Geschichten, Erinnerungen und Gedanken aus der Metal-Welt.</p></article>
         <article><span>★</span><h3>Essentials</h3><p>Songs und Alben, die jeder Metalhead kennen sollte.</p></article>
@@ -168,7 +183,7 @@
       </section>
 
       <section id="about" class="about-x">
-        <div class="about-card">
+        <div class="about-card reveal">
           <span>Über 05Alex</span>
           <h2>Ein Metalhead. Eine Meinung.</h2>
           <p>MetalMessage ist kein Musikmagazin. Es ist mein persönlicher Blick auf Metal-Songs und Alben.</p>
@@ -181,7 +196,7 @@
     <section id="reviewView" class="review-view hidden"></section>
 
     <footer class="footer-x">
-      <div class="footer-brand"><div class="logo-orb small"><span>☾</span><b>M</b></div><div><strong>MetalMessage</strong><small>Für Metalheads. Von einem Metalhead.</small></div></div>
+      <div class="footer-brand"><img class="brand-logo footer-logo" src="logo.svg" alt=""><div><strong>MetalMessage</strong><small>Für Metalheads. Von einem Metalhead.</small></div></div>
       <div><strong>Navigation</strong><a href="#reviews">Reviews</a><a href="#essentials">Essentials</a><a href="#about">05Alex</a></div>
       <div><strong>Folge mir</strong><a href="https://www.instagram.com/metalmessage05alex/" target="_blank">Instagram</a><a href="https://www.patreon.com/c/metalmessageby05alex/posts" target="_blank">Patreon</a></div>
     </footer>
