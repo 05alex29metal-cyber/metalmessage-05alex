@@ -1,13 +1,9 @@
-# MetalMessage 6.0
+# MetalMessage 7.0 – Phase 1
 
-Professionelles GitHub-Pages-Fundament.
-
-Neue Reviews werden ab jetzt in `data.js` eingetragen.
-Die Website baut Review-Karten, Suche und Detailansichten automatisch daraus.
-
-Dateien:
-- index.html
-- style.css
-- data.js
-- app.js
-- README.md
+Neue Premium-Startseite:
+- starker Hero-Bereich
+- Review des Monats
+- 05Alex empfiehlt heute
+- Instagram und Patreon
+- persönliche Mail entfernt
+- GitHub Pages ready
