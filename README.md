@@ -28,3 +28,13 @@ Neu:
 - Community-Preview
 - stärkere Review-Card-Hinweise
 - Logo/Branding bleibt aus XI erhalten
+
+# MetalMessage XIII – Community Reactions
+
+Neu:
+- Emoji-Reaktionen unter jeder Review
+- Legendär, Banger, Brutal, Atmosphäre, Riff des Todes, Gänsehaut
+- lokale Speicherung im Browser
+- Community-Favorit auf der Startseite
+- Emoji-Pop + Partikelanimation
+- Zufällige Review bleibt drin

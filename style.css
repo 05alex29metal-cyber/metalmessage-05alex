@@ -124,3 +124,26 @@
   .xii-dashboard{grid-template-columns:1fr}
   .journal-feature h2{font-size:28px}
 }
+
+/* MetalMessage XIII – Community Reactions */
+.random-btn{border:1px solid rgba(255,255,255,.18);cursor:pointer;font-family:inherit}
+.community-favorite{display:grid;grid-template-columns:1fr auto;gap:18px;align-items:center;margin:0 0 24px;padding:24px;border-radius:16px;border:1px solid rgba(25,163,106,.35);background:radial-gradient(circle at 90% 20%,rgba(25,163,106,.28),transparent 28%),linear-gradient(145deg,rgba(16,26,23,.96),rgba(4,6,5,.98));box-shadow:0 14px 34px rgba(0,0,0,.32)}
+.community-favorite span{color:var(--bright);text-transform:uppercase;letter-spacing:1.2px;font-weight:950;font-size:12px}
+.community-favorite h2{font-family:Georgia,serif;text-transform:uppercase;font-size:34px;margin:8px 0}
+.community-favorite p{color:var(--silver);margin:0}
+.community-favorite strong{font-size:54px;filter:drop-shadow(0 0 18px rgba(25,163,106,.6));animation:reactionFloat 2.2s ease-in-out infinite alternate}
+.reaction-panel{margin:18px 0 0;padding:18px;border-radius:14px;border:1px solid rgba(25,163,106,.28);background:radial-gradient(circle at 100% 0%,rgba(25,163,106,.16),transparent 30%),rgba(255,255,255,.035)}
+.reaction-panel h3{margin:0 0 6px;color:var(--bright);text-transform:uppercase;font-size:13px;letter-spacing:1px}
+.reaction-panel p{color:var(--muted);margin:0 0 14px}
+.reaction-grid{display:flex;flex-wrap:wrap;gap:10px}
+.reaction-btn{position:relative;display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.045);color:var(--text);border-radius:999px;padding:10px 12px;font-weight:950;cursor:pointer;transition:transform .18s ease,border-color .18s ease,background .18s ease}
+.reaction-btn:hover,.reaction-btn.active{transform:translateY(-2px);border-color:var(--bright);background:rgba(25,163,106,.16);box-shadow:0 0 18px rgba(25,163,106,.18)}
+.reaction-btn .emoji{font-size:18px}.reaction-btn .count{color:var(--bright)}
+.reaction-note{margin-top:12px!important;color:var(--bright)!important;font-weight:900;min-height:20px}
+.pop-emoji{position:absolute;pointer-events:none;animation:emojiPop .65s ease-out forwards;font-size:24px;z-index:5}
+.pop-particle{position:fixed;width:6px;height:6px;border-radius:50%;background:var(--bright);box-shadow:0 0 14px rgba(25,163,106,.9);pointer-events:none;animation:particle .75s ease-out forwards;z-index:999}
+.review-card-x::after{content:"Öffnen →";display:block;margin-top:12px;color:var(--bright);font-size:12px;text-transform:uppercase;font-weight:950;opacity:.8}
+@keyframes emojiPop{from{opacity:1;transform:translateY(0) scale(.9)}to{opacity:0;transform:translateY(-32px) scale(1.35)}}
+@keyframes particle{from{opacity:1;transform:translate(0,0) scale(1)}to{opacity:0;transform:translate(var(--x),var(--y)) scale(.2)}}
+@keyframes reactionFloat{from{transform:translateY(0)}to{transform:translateY(-8px)}}
+@media(max-width:560px){.community-favorite{grid-template-columns:1fr}.community-favorite strong{font-size:42px}.reaction-btn{width:100%;justify-content:space-between}}
