@@ -1,3 +1,13 @@
-# MetalMessage 5.0
+# MetalMessage 6.0
 
-Logo-Update, MetalJournal, Stimmungskarten, detaillierte Scores, Suche, Premium-Startseite.
+Professionelles GitHub-Pages-Fundament.
+
+Neue Reviews werden ab jetzt in `data.js` eingetragen.
+Die Website baut Review-Karten, Suche und Detailansichten automatisch daraus.
+
+Dateien:
+- index.html
+- style.css
+- data.js
+- app.js
+- README.md
