@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="92" fill="#050605"/><circle cx="256" cy="256" r="170" fill="none" stroke="#0dbb82" stroke-width="20" opacity=".78" stroke-dasharray="760 140"/><circle cx="256" cy="256" r="170" fill="none" stroke="#e6e6e6" stroke-width="3" opacity=".25"/><g fill="#e7e7e7"><path d="M119 116h68l69 142 69-142h68l-44 287h-58l22-151-57 116-57-116 22 151h-58z"/><path d="M93 130l61 11-42 45zM419 130l-61 11 42 45zM238 102l18-70 18 70z"/></g><path d="M142 405h228" stroke="#0dbb82" stroke-width="10" stroke-linecap="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<defs><filter id="r"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" result="n"/><feDisplacementMap in="SourceGraphic" in2="n" scale="4"/></filter></defs>
+<rect width="512" height="512" rx="90" fill="#050605"/>
+<circle cx="256" cy="256" r="172" fill="none" stroke="#0dbb82" stroke-width="18" opacity=".75" stroke-dasharray="760 150"/>
+<circle cx="256" cy="256" r="172" fill="none" stroke="#e6e6e6" stroke-width="3" opacity=".25"/>
+<g fill="#e7e7e7" filter="url(#r)">
+<path d="M118 116h69l69 143 69-143h69l-45 287h-58l22-150-57 116-57-116 22 150h-58z"/>
+<path d="M94 132l61 11-43 44zM418 132l-61 11 43 44zM238 102l18-70 18 70z"/>
+</g>
+<path d="M142 404h228" stroke="#0dbb82" stroke-width="10" stroke-linecap="round"/>
+</svg>
